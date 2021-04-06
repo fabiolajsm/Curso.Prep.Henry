@@ -7,10 +7,13 @@ function obtenerMayor(x, y) {
   // Tu código:
   if (x > y) {
     return x
-  } else if (y > x) {
+  }
+  else if (y > x) {
     return y
   }
-  else { return y }
+  else {
+    return y
+  }
 }
 
 function mayoriaDeEdad(edad) {
@@ -19,7 +22,8 @@ function mayoriaDeEdad(edad) {
   //Si es menor, devolver --> "Not allowed"
   if (edad >= 18) {
     return "Allowed"
-  } else {
+  }
+  else {
     return "Not allowed"
   }
 }
@@ -50,11 +54,14 @@ function saludo(idioma) {
   // Tu código:
   if (idioma == 'aleman') {
     return 'Guten Tag!';
-  } else if (idioma == 'mandarin') {
+  }
+  else if (idioma == 'mandarin') {
     return 'Ni Hao!';
-  } else if (idioma == 'ingles') {
+  }
+  else if (idioma == 'ingles') {
     return 'Hello!';
-  } else {
+  }
+  else {
     return 'Hola!';
   }
 }
@@ -119,7 +126,8 @@ function esEntero(numero) {
   // Tu código:
   if (numero % 1 === 0) {
     return true
-  } else if (numero == 0) {
+  }
+  else if (numero == 0) {
     return false
   }
   else {
@@ -134,7 +142,8 @@ function fizzBuzz(numero) {
   // De lo contrario, devuelve el numero
   if (numero % 3 == 0 && numero % 5 == 0) {
     return "fizzbuzz"
-  } else if (numero % 3 == 0) {
+  }
+  else if (numero % 3 == 0) {
     return "fizz"
   }
   else if (numero % 5 == 0) {
@@ -189,7 +198,8 @@ function esPrimo(numero) {
     //Escribe tu código aquí
     if (valor === true) {
       return "Soy verdadero"
-    } else {
+    }
+    else {
       return "Soy falso"
     }
 
@@ -212,7 +222,9 @@ function esPrimo(numero) {
     if (numero > 99 && numero < 1000) {
       return true
     }
-    return false
+    else {
+      return false
+    }
   }
 
   function doWhile(numero) {
